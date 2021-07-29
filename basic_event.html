@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Event</title>
+</head>
+
+<body >
+    <!-- body or form work onkeypress="onkeyPress()" and onresize="onreSize()" and  onscroll="scoolOn()"  -->
+    <p onmouseup="mouseUp()" style="background-color:#55ffa1">OnmouseUt  </p>
+    <button onclick="demoName()">Click Me</button><br>
+    <p ondblclick="doubleClick()" style="background-color:#ff55ff">Double Click</p>
+    <p oncontextmenu="context()" style="background-color:#ffd255">oncontextmenu Menu </p>
+    <p onmouseenter="senter()" style="background-color:#942094">onmouseenter  </p>
+    <p onmouseout="mouseOut()" style="background-color:#55ffa1">onmouseout  </p>
+    <p onmousedown="mouseDown()" style="background-color:#360136">onmousedown  
+        <!-- click er moto kj kore . its like onclick event -->
+    </p>
+
+   
+<form onkeypress="onkeyPress()" action="" style="background-color:#55ffa1;height:40px" >  <!-- body or form work-->
+
+
+</form>
+
+<div onscroll="scoolOn()" style="background-color:#55ffa1;height: 10px;width:40px">
+    onreSizeon reSizeonreSize  onreSize onreSize onreSize 
+    onreSizeon reSizeonreSize  onreSize onreSize onreSize 
+    onreSizeon reSizeonreSize  onreSize onreSize onreSize 
+
+</div>
+
+    <script>
+
+
+function scoolOn() { //work F
+            document.write('onreSize event<br>');
+        }
+          function onreSize() {
+            document.write('onreSize event<br>');
+        }
+         function mouseUp() {
+            document.write('onmouseup event<br>');
+        }
+        function demoName() {
+            document.write('single click event<br>');
+        }
+
+        function doubleClick() {
+            document.write('Double Click  event<br>');
+        }
+
+        function context() {
+            document.write('context menu  event<br>');
+        }
+
+
+        function mouseDown() {
+            document.write('Hellow onmousedown event <br>');
+        }
+
+        function mouseOut() {
+            document.write('Hellow onmouseout event <br>');
+        }
+
+        function senter() {
+            document.write('Hellow onmouseenter event <br>');
+        }
+    </script>
+</body>
+
+</html>

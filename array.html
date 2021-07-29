@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Array</title>
+</head>
+<body>
+    
+<script>
+    //1st array
+    document.write('<h1 style="text-align:center">Array 1st</h1><br>');
+var array=['riaz','islam',23,null,true];
+
+for(var a=0;a<array.length;a++){
+    document.write(array[a]+'<br>');
+}
+
+document.write('<h1 style="text-align:center">Array 2nd</h1><br>');
+//2nd array
+var array= new Array('riaz','islam',23,null,true);
+
+for(var a=0;a<array.length;a++){
+    document.write(array[a]+'<br>');
+}
+document.write('<h1 style="text-align:center">Array 2nd</h1><br>');
+//3rd array
+var array= new Array();
+array[1]='riaz';
+array[4]='riaz';
+array[6]='riaz';
+array[8]='riaz';
+
+
+for(var a=0;a<array.length;a++){
+    document.write(array[a]+'<br>');
+}
+
+document.write('<h1 style="text-align:center">Array 4th</h1><br>');
+//3rd array
+var array= new Array();
+
+for(var get=0; get<5;get++){
+    array[get]=prompt('value get');
+}
+
+for(var a=0;a<5;a++){
+    document.write(array[a]+'<br>');
+}
+
+</script>
+
+</body>
+</html>
