@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string</title>
+</head>
+
+<body>
+
+    <script>
+        //----------------------------------------------string--------------------------------
+        document.write('<h1 style="text-align:center">string </h1><br>');
+        var str = "my name is Riaz islam islam";
+        document.write('Orginal string:' + str + '<br>');
+        var a = str.length;
+        document.write('string length = ' + a + '<br>');
+        var upercase = str.toUpperCase();
+        document.write('string toUpperCase() = ' + upercase + '<br>');
+        var toLowerCase = str.toLowerCase();
+        document.write('string toLowerCase() = ' + toLowerCase + '<br>');
+        var includes = str.includes("Riaz");
+        var includ = str.includes("Riaz");
+        document.write('string includes("Riaz") case sensetive  = ' + includes + '<br>');
+        document.write('string includes("riaz") case sensetive  = ' + includ + '<br>');
+
+        var startsWith = str.startsWith("my");
+        var startsWit = str.startsWith("Riaz");
+        document.write('string startsWith("my") case sensetive  = ' + startsWith + '<br>');
+        document.write('string startsWit("riaz") case sensetive  = ' + startsWit + '<br>');
+
+        var endsWith = str.endsWith("islam");
+        var endsWithd = str.endsWith("Riaz");
+        document.write('string endsWith("islam") case sensetive  = ' + endsWith + '<br>');
+        document.write('string endsWith("riaz") case sensetive  = ' + endsWithd + '<br>');
+
+        var ser = str.search("islam");
+        var ser2 = str.search("riaz");
+        document.write('string search("Riaz") case sensetive return value position  = ' + ser + '<br>');
+        document.write('string search("riaz") case sensetive but (-1)value return  = ' + ser2 + '<br>');
+
+        var ma = str.match(/islam/g);
+        document.write('string match("Riaz")   = ' + ma + '<br>');
+
+        var index = str.indexOf('Riaz');
+        document.write('string indexOf("Riaz") return position  = ' + index + '<br>');
+
+        var last = str.lastIndexOf('islam');
+        document.write('string lastIndexOf("Riaz")  position but oulta = ' + last + '<br>');
+
+        var rep = str.replace('Riaz', 'riaz khan');
+        document.write('string replace("Riaz") return value replace = ' + rep + '<br>');
+
+        var rep_last = str.replace(/islam/g, 'Islam');
+        document.write('string replace("/islam/g")  replace all globally= ' + rep_last + '<br>');
+
+        var tirm = str.trim();
+        document.write('string tirm()  all space remove= ' + tirm + '<br>');
+        var charAt = str.charAt(4);
+        document.write('string charAt()  return charter= ' + charAt + '<br>');
+        var charCodeAt = str.charCodeAt(4);
+        document.write('string charCodeAt()  return charter ascii code return= ' + charCodeAt + '<br>');
+
+        var fromCharCode = String.fromCharCode(97);
+        document.write('string fromCharCode()  return charter ascii code return= ' + fromCharCode + '<br>');
+        var aa = " concate";
+        var concat = str.concat(aa);
+        document.write('string concat()  return concate = ' + concat + '<br>');
+
+        var split = str.split(" ");
+        document.write('string split()  return space vanish = ' + split + '<br>');
+
+        var rep = str.repeat(3);
+        document.write('string repeat(3)   = ' + rep + '<br>');
+
+        var slice = str.slice(3);
+        document.write('string slice()  return value remove = ' + slice + '<br>');
+
+        var slice2 = str.slice(3,12);
+        document.write('string slice(3,12)  return value remove = ' + slice2 + '<br>');
+
+        var substr = str.substr(3,12);
+        document.write('string substr(3,12)  return value  = ' + substr + '<br>');
+        var substring = str.substring(3,12);
+        document.write('string substring(3,12)  return value  = ' + substring + '<br>');
+
+        var toString = str.toString();
+        document.write('string toString(3,12)  return string  = ' + toString + '<br>');
+    </script>
+
+</body>
+
+</html>
