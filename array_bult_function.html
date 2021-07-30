@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array bult function</title>
+</head>
+
+<body>
+
+    <script>
+        //----------------------------------------------map()--------------------------------
+
+        document.write('<h1 style="text-align:center">map()</h1><br>');
+
+        var map = [10, 12, 15, 20];
+        document.write('Original array :' + map + '<br><br>');
+        var data = map.map(mapValue);
+        document.write('map new array  multiple 5 : <b>' + data + '</b><br><br>');
+        function mapValue(value) {
+            return value*5;
+        }
+        var map_ob =[{
+                name: 'Riaz islam',
+                age: 23,
+                village: 'chatia'
+            },
+            {
+                name: 'Rahim',
+                age: 25,
+                village: 'shi'
+            },
+            {
+                name: 'khan',
+                age: 26,
+                village: 'hoi'
+            },
+            {
+                name: 'oop',
+                age: 27,
+                village: 'joy'
+            },
+            {
+                name: 'jquery',
+                age: 27,
+                village: 'oop'
+            },
+
+        ]
+        document.write('map_ob object  view console <br>');
+        console.log('map_ob object', map);
+        var data_ob = map_ob.map(mapObje);
+        document.write('map new array  multiple 5 : <b>' + data_ob + '</b><br><br>');
+        function mapObje(value) {
+            return value.name;
+        }
+
+
+        //----------------------------------------------For In Loop Object--------------------------------
+
+        document.write('<h1 style="text-align:center">For In Loop Object</h1><br>');
+        var ob = {
+            name: 'riaz',
+            age: 23,
+            year: '1997-12-13'
+        }
+        document.write('For In Loop object   value  change  view console <br>');
+        console.log('For In Loop object', ob);
+
+        for (var key in ob) {
+            document.write(key + ' : ' + ob[key] + '<br>');
+        }
+
+
+        //----------------------------------------------const array & const Object--------------------------------
+
+        document.write('<h1 style="text-align:center">const array & const Object</h1><br>');
+
+        const p = [12, 13, 12, 12];
+
+        document.write('const array   value  change   ' + p + '<br>');
+        p[1] = 95;
+        document.write('p[1]=95 value  change  ' + p + '<br>');
+
+        const pray = {
+            name: 'riaz',
+            age: 23,
+            year: '1997-12-13'
+        }
+        document.write('const object   value  change  view console <br>');
+        console.log('const object', pray);
+        pray.name = 'Riaz islam';
+        document.write('pray.name value  change <b> ' + pray.name + '</b><br>');
+
+
+
+        //----------------------------------------------Arrays Object--------------------------------
+        document.write('<h1 style="text-align:center">Array Object</h1><br>');
+
+        var object = [{
+                name: 'Riaz islam',
+                age: 23,
+                village: 'chatia'
+            },
+            {
+                name: 'Rahim',
+                age: 25,
+                village: 'shi'
+            },
+            {
+                name: 'khan',
+                age: 26,
+                village: 'hoi'
+            },
+            {
+                name: 'oop',
+                age: 27,
+                village: 'joy'
+            },
+            {
+                name: 'jquery',
+                age: 27,
+                village: 'oop'
+            },
+
+        ]
+        document.write('Object view to  console<br>');
+        console.log('array object', object);
+
+        for (var a = 0; a < object.length; a++) {
+
+            document.write('object= <b> ' + object[a].name + ' , ' + object[a].age + ' , ' + object[a].village +
+                '</b><br>');
+
+        }
+        // document.write('object.name = <b>' + object.name + '</b><br>');
+        // document.write('object.village = <b>' + object.village + '</b><br>');
+
+        //----------------------------------------------Object value asign --------------------------------
+        document.write('<h1 style="text-align:center">Array Object</h1><br>');
+
+        var object = new Object();
+        object.name = 'Riaz islam';
+        object.age = 23;
+        object.village = 'chatia';
+
+        document.write('Object view to  console<br>');
+        console.log('asign object', object);
+
+        document.write('object.name = <b>' + object.name + '</b><br>');
+        document.write('object.village = <b>' + object.village + '</b><br>');
+
+
+        //----------------------------------------------Object default value--------------------------------
+        document.write('<h1 style="text-align:center">Array Object</h1><br>');
+
+        var object = {
+            name: 'riaz',
+            age: 23,
+            gender: 'male',
+            student_info: ['Pau', 'hons', 'cse'],
+            phone: function () {
+                return "01756634400";
+            },
+            personal: function () {
+                return 'name = ' + this.name + ' age= ' + this.age;
+            },
+            parmanent_address: {
+                division: 'Barishal',
+                district: 'Barishal',
+                village: 'chatia',
+            }
+
+        };
+        document.write('Object view to  console<br>');
+        console.log('default object', object);
+
+        document.write('object.name = <b>' + object.name + '</b><br>');
+        document.write('function this object.personal()  <b>' + object.personal() + '</b><br>');
+        document.write('array object.student_info[1]= <b>' + object.student_info[1] + '</b><br>');
+
+        document.write('function ,object.phone() = <b>' + object.phone() + '</b><br>');
+
+        document.write('object ,object.parmanent_address.division = <b>' + object.parmanent_address.division +
+            '</b><br>');
+
+
+
+        //----------------------------------------------forEach() --------------------------------
+        document.write('<h1 style="text-align:center">Array forEach()</h1><br>');
+
+        var array = ['Riaz', 'Islam', 5, "Zeela"];
+        document.write('Original array :' + array + '<br><br>');
+        document.write('forEach array <b> Out line</b><br><br>');
+        array.forEach(loop);
+
+        function loop(value, index) {
+            document.write('<b>' + index + '=' + value + '</b><br><br>');
+        }
+        document.write('forEach array <b> In line</b><br><br>');
+
+        array.forEach(function (value, index) {
+
+            document.write('<b>' + index + '=' + value + '</b><br><br>');
+
+        });
+
+        //----------------------------------------------toString() , valueOf() ,fill()--------------------------------
+        document.write('<h1 style="text-align:center">Array toString() , valueOf() ,fill()</h1><br>');
+
+        var array = ['Riaz', 'Islam', 5, "Zeela"];
+
+        document.write('Original array :' + array + '<br><br>');
+        var data = array.toString();
+        document.write('toString array string convert : <b>' + data + '</b><br><br>');
+        var data = array.valueOf();
+        document.write('valueOf array : <b>' + data + '</b><br><br>');
+        var data = array.fill('kooom');
+        document.write('fill array : <b>' + data + '</b><br><br>');
+
+
+        //----------------------------------------------filter() --------------------------------
+        document.write('<h1 style="text-align:center">Array filter()</h1><br>');
+
+        var array = [10, 12, 15, 20];
+        document.write('Original array :' + array + '<br><br>');
+        var data = array.filter(checkValue);
+        document.write('filter array (value>=15) : <b>' + data + '</b><br><br>');
+
+
+        function checkValue(value) {
+            return value >= 15;
+        }
+        //----------------------------------------------find() & findIndex()--------------------------------
+        document.write('<h1 style="text-align:center">Array find() & findIndex()</h1><br>');
+
+        var array = [10, 12, 15, 20];
+        document.write('Original array :' + array + '<br><br>');
+        var data = array.find(checkValue);
+        document.write('find array (value>=15) : <b>' + data + '</b><br><br>');
+
+        var dataa = array.findIndex(checkValue);
+        document.write('findIndex array (value>=15) : <b>' + dataa + '</b><br><br>');
+
+
+        function checkValue(value) {
+            return value >= 15;
+        }
+        //----------------------------------------------some() & every()--------------------------------
+        document.write('<h1 style="text-align:center">Array some() & every()</h1><br>');
+
+        var array = [10, 12, 15, 20];
+        document.write('Original array :' + array + '<br><br>');
+        var data = array.some(checkValue);
+        document.write('some array (value>=15) : <b>' + data + '</b><br><br>');
+
+        var dataa = array.every(checkValue);
+        document.write('every array  (value>=15): <b>' + dataa + '</b><br><br>');
+
+
+        function checkValue(value) {
+            return value >= 15;
+        }
+
+
+        //----------------------------------------------sort() & reverse()--------------------------------
+        document.write('<h1 style="text-align:center">Array sort() & reverse()</h1><br>');
+
+        var array = ['Riaz', 'Islam', 'Baul', "Zeela"];
+        document.write('Original array :' + array + '<br><br>');
+
+        array.sort();
+        document.write('Sort array : <b>' + array + '</b><br><br>');
+        array.reverse();
+        document.write('Reverse array For sort array data :' + array + '<br><br>');
+
+
+        var array = ['Riaz', 'Islam', 'Baul', "Zeela"];
+        document.write('Original array :' + array + '<br><br>');
+
+        array.reverse();
+        document.write('Reverse array :<b>' + array + '</b><br>');
+
+
+        //----------------------------------------------pop() & push()--------------------------------
+        document.write('<h1 style="text-align:center">Array pop() & push()</h1><br>');
+
+        var array = ['Riaz', 'Islam', 'Baul', "Zeela"];
+        document.write('Original array :' + array + '<br><br>');
+
+        array.pop(); //last element delete
+        document.write('Pop array :' + array + '<br><br>');
+
+
+
+        var array = ['Riaz', 'Islam', 'Baul', "Zeela"];
+        document.write('Original array :' + array + '<br><br>');
+
+        array.push('new add', 'new 2nd add'); //last element position new data element add
+        document.write('Reverse array :' + array + '<br>');
+        var array = ['Riaz', 'Islam', 'Baul', "Zeela"];
+        document.write('Original array :' + array + '<br><br>');
+    </script>
+
+</body>
+
+</html>
