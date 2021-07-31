@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+</head>
+
+<body>
+
+    <script>
+        //----------------------------------------------Date method--------------------------------
+        document.write('<h1 style="text-align:center">Date </h1><br>');
+        var now =new Date();
+        document.write('Orginal now =new Date(): ' + now + '<br><br>');
+        var datemonthday = now.toDateString(now);
+        document.write('now.toDateString(now) = ' + datemonthday + '<br>');
+        var date = now.getDate(now);
+        document.write('now.getDate(now) = ' + date + '<br>');
+        var day = now.getDay(now);
+        document.write('now.getDay(now) = ' + day + '<br>');
+        var month = now.getMonth(now);
+        document.write('now.getMonth(now) = ' + month + ' Month<br>');
+        var getFullYear = now.getFullYear(now);
+        document.write('now.getFullYear(now) = ' + getFullYear + ' Year<br>');
+        var getTime = now.getTime(now);
+        document.write('now.getTime(now) = ' + getTime + ' time<br>');
+        var getMilliseconds = now.getMilliseconds(now);
+        document.write('now.getMilliseconds(now) = ' + getMilliseconds + ' Milliseconds<br>');
+        var getSeconds = now.getSeconds(now);
+        document.write('now.getSeconds(now) = ' + getSeconds + ' Seconds<br>');
+        var getMinutes = now.getMinutes(now);
+        document.write('now.getMinutes(now) = ' + getMinutes + ' Minutes<br>');
+        var getHours = now.getHours(now);
+        document.write('now.getHours(now) = ' + getHours + ' Hours<br>');
+
+        document.write('<h1 style="text-align:center">Set Date </h1><br>');
+
+        now.setDate(20);
+        document.write('now.setDate(20) = ' + now + ' Hours<br>');
+        now.setFullYear(2021);
+        document.write('now.setFullYear(2021) = ' + now + ' Hours<br>');
+        now.setMonth(5);
+        document.write('now.setMonth(2021) = ' + now + ' Hours<br>');
+        now.setHours(5);
+        document.write('now.setHours(5) = ' + now + ' Hours<br>');
+        now.setMinutes(25);
+        document.write('now.setMinutes(25) = ' + now + ' Hours<br>');
+        now.setSeconds(50);
+        document.write('now.setSeconds(50) = ' + now + ' Hours<br>');
+        now.setMilliseconds(150);
+        document.write('now.setMilliseconds(95) = ' + now + ' Hours<br>');
+    </script>
+
+</body>
+
+</html>

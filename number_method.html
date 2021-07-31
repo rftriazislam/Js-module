@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number</title>
+</head>
+
+<body>
+
+    <script>
+        //----------------------------------------------Number method--------------------------------
+        document.write('<h1 style="text-align:center">Number </h1><br>');
+        var str = "85";
+        document.write('Orginal string: "' + str + '"<br>');
+        var a = Number(str);
+        document.write('Number(n) value convert  = ' + a + '<br>');
+        var stur = "85.30";
+        document.write('Orginal string: "' + stur + '"<br>');
+        var b = parseInt(stur);
+        document.write('parseInt(n) value inte  = ' + b + '<br>');
+        var float = "85.30";
+        document.write('Orginal string: "' + float + '"<br>');
+        var c = parseFloat(float);
+        document.write('parseFloat(n) value check  = ' + c + '<br>');
+        var isFinite = "85.30";
+        document.write('Orginal string: "' + isFinite + '"<br>');
+        var d = Number.isFinite(isFinite);
+        document.write('isFinite(n) value check  = ' + d + '<br>');
+        var isInteger = "85.30";
+        document.write('Orginal string: "' + isInteger + '"<br>');
+        var e = Number.isInteger(isInteger);
+        document.write('isInteger(n) value check  = ' + e + '<br>');
+
+        var f = 85.3546;
+        document.write('Orginal inter: "' + isInteger + '"<br>');
+        var g =f.toFixed(3);
+        document.write('toFixed(3) value check  = ' + g + '<br>');
+        var h =f.toPrecision(3);
+        document.write('toPrecision(3) value check last two digit communite  = ' + h + '<br>');
+    
+    </script>
+
+</body>
+
+</html>
