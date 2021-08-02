@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval  clearInterval </title>
+    <style>
+        #test{
+            background-color:red;
+            height: 40px;
+            width: 40px;
+        }
+        #test1{
+            background-color:red;
+            height: 40px;
+            width: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>setInterval</h1>
+
+<div id="test"></div>
+
+
+<h1>setTimeOut</h1>
+
+<div id="test1"></div>
+<button onclick="stopAnimation()"> stop animation</button>
+
+|<script>
+
+var animat=setInterval(animation,1000);
+var a=0;
+function animation(){
+    a=a+10;
+    if(a==200){
+    clearInterval(animat);
+    }else{
+      var target =document.getElementById('test');
+      target.style.marginLeft = a+'px';  
+    }
+}
+
+var setout = setTimeout(() => {
+    var target =document.getElementById('test1');
+      target.style.marginLeft = 200+'px';  
+}, 3000);
+
+
+
+function stopAnimation(){
+    clearTimeout(setout);
+}
+
+
+
+</script>
+</body>
+</html>

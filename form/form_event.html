@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Event </title>
+</head>
+
+<body>
+    <h1> oninput , onfocus , onblur</h1>
+    <form action="">
+        <label for="">Name </label><input type="text" id="name" oninput="elementInput(this)"  onfocus="elementFocus(this)" onblur="elementBlur(this)"> <br><br>
+        <label for="">class </label><input type="text" id="class" onfocus="elementFocus(this)" onblur="elementBlur(this)"> <br><br>
+        <label for="">country </label>
+        <select id="country" onfocus="elementFocus(this)" onblur="elementBlur(this)">
+            <option value="">BD</option>
+            <option  value="">IN</option>
+            <option  value="">PK</option>
+        </select>
+
+
+    </form>
+
+    <h2 id="test">
+
+    </h2>
+    <script>
+
+        function elementFocus(element){
+            element.style.background='lime';
+        }
+
+        function elementBlur(element){
+            element.style.background='';
+
+        }
+
+        function elementInput(element){
+       var value =element.value;
+
+        document.getElementById("test").innerHTML=value;
+       
+        }
+    </script>
+</body>
+
+</html>

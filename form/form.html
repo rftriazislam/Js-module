@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Event </title>
+</head>
+
+<body>
+    <h1> onchange onselect onsubmit oninvalid</h1>
+    <form action="" onsubmit="submitFunction()">
+        <label for="">Name </label><input type="text" id="name" onchange="elementChange(this)"
+            onselect="selectFunction()"> <br><br>
+        <label for="">class </label><input type="text" id="class" onchange="elementChange(this)" oninvalid="alert('this is invalid')" required> <br><br>
+        <label for="">country </label>
+        <select id="country" onchange="elementChange(this)">
+            <option value="BD">BD</option>
+            <option value="IN">IN</option>
+            <option value="PK">PK</option>
+        </select>
+
+<input type="submit">
+    </form>
+
+    <div id="test">
+
+    </div>
+    <script>
+        function elementChange(element) {
+            var value = element.value;
+            document.getElementById("test").innerHTML = value;
+        }
+
+        function selectFunction() {
+         
+            alert('select data');
+        }
+
+        function submitFunction(){
+
+            var name=document.getElementById("name").value
+            var cls =document.getElementById("class").value;
+            var country=document.getElementById("country").value;
+            alert(' name = '+name+', class ='+cls+', country ='+country);
+        }
+    </script>
+</body>
+
+</html>

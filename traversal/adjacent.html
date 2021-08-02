@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adjacent</title>
+</head>
+<body>
+
+
+    <div id="dom">
+
+        <p>This is Adjacent page</p>
+    </div>
+    <script>
+        // var newElement=document.createElement("h2");
+
+        // var newText=document.createTextNode('this is new head'); 
+        //  newElement.appendChild(newText);
+        var target=document.getElementById('dom');
+        // target.insertAdjacentElement('beforebegin','This text beforebegin');
+        target.insertAdjacentHTML('beforebegin','insertAdjacentText text beforebegin');
+        target.insertAdjacentHTML('afterbegin','insertAdjacentText text afterbegin');
+        target.insertAdjacentHTML('beforeend','insertAdjacentText text afterend');
+        target.insertAdjacentHTML('afterend','insertAdjacentText text afterend');
+        
+        target.insertAdjacentText('afterend','insertAdjacentText text afterend');
+
+    </script>
+    
+</body>
+</html>
